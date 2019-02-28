@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+	<title>Document</title>
+</head>
+<body class="page">
+	<header>
+		<nav>
+			<ul class="nav d-flex justify-content-between">
+				<li class="nav-item logo"><img src="img/logo.png" alt=""></li>
+				<li class="nav-item menu_icon"><img src="img/icons/menu_icon.png" alt=""></li>
+				<li class="nav-item"><a href="#" class="nav-link menu">Каталог товаров</a></li>
+				<li class="nav-item"><a href="#" class="nav-link menu">Контакты</a></li>
+				<li class="nav-item"><a href="#" class="nav-link menu">Доставка</a></li>
+				<li class="nav-item"><a href="#" class="nav-link menu">О нас</a></li>
+				<li class="nav-item valuta">
+					<div class="btn-group">
+						<button type="button" class="btn btn-outline-primary funt"><img src="img/icons/sign_f.png" alt=""></button>
+						<button type="button" class="btn btn-outline-primary dol"><img src="img/icons/sign_d.png" alt=""></button>
+					</div>
+				</li>
+				<li class="nav-item basket">
+					<div>
+						<a href="#" class="nav-link"><img src="img/icons/basket.png" alt="">
+						<div class="circle">11</div>
+						<span>1234$</span></a>
+						
+					</div>
+				</li>
+				<li class="nav-item window dropdown"><a href="#" class="nav-link acount" data-toggle="dropdown"><img src="img/icons/acount.png" alt="">Войдите в личный кабинет</a>
+					<div class="dropdown-menu">
+						<h3 class="title_form dropdown-item">Вход в интернет магазин</h3>
+						<div class="sign_in d-flex justify-content-between">
+							<div class="form">
+								<form action="/action_page.php">
+  									<div class="form-group m-0">
+    									<label for="email">Электронная почта или телефон</label>
+    									<input type="email" class="form-control" id="email">
+  									</div>
+  									<div class="form-group password m-0">
+    									<label for="pwd">Пароль</label>
+    									<input type="password" class="form-control" id="pwd">
+  									</div>
+  									<a href="">Напомнить пароль</a>
+  									<div class="form-group form-check m-0 box">
+    									<label class="form-check-label">
+      									<input class="form-check-input" type="checkbox"> Запомнить меня
+    									</label>
+  									</div>
+  									<div class="d-flex"><button type="submit" class="btn btn-primary submit">Войти</button>
+  									<a href="" class="cancel">Отмена</a></div>
+								</form>
+							</div>
+							<div class="line">
+								<div class="line_top"></div>
+								или
+								<div class="line_bottom"></div>
+							</div>
+							<div class="socials">
+								<p>Войти как пользователь</p>
+								<button class="facebook"><img src="img/icons/facebook.png" alt="">Facebook</button>
+								<button><img src="img/icons/google.png" alt="">Google</button>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="row main m-0">
+			<div class="col-xl-3 col-lg-4 col-md-12 list-block p-0">
+				<div class="head_list d-flex justify-content-between">
+					<span>Все категории товаров</span>
+					<div><img src="img/icons/menu.png" alt=""></div>
+				</div>
+
+				<ul class="list-group list-group-flush list_menu">
+  					<li class="list-group-item dropdown dropright"><div class="d-flex justify-content-between" data-toggle="dropdown">Карты памяти
+  						<div class="arrow_change">
+  							<img src="img/icons/list.png" alt="" class="arrow">
+  							<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  						</div></div>
+  						<div class="dropdown-menu submenu">
+      					<a class="dropdown-item d-flex justify-content-between title_menu" href="#">
+      						<span >Проводные гарнитуры</span>
+      						<div class="arrow_link">
+      							Смотреть все
+      							<img src="img/icons/arrow_link.png" alt="">
+      						</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры HTC</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры iPhone</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры Nokia</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры SAMSUNG</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры SONY</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры LENOVO</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры HUAWEI</span>
+      						<div class="circle">25</div>
+      					</a>
+   					 </div>
+  					</li>
+
+   					<li class="list-group-item dropdown dropright"><div class="d-flex justify-content-between" data-toggle="dropdown">Смарт часы и браслеты
+  						<div class="arrow_change">
+  							<img src="img/icons/list.png" alt="" class="arrow">
+  							<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  						</div></div>
+  						<div class="dropdown-menu submenu">
+      					<a class="dropdown-item d-flex justify-content-between title_menu" href="#">
+      						<span >Проводные гарнитуры</span>
+      						<div class="arrow_link">
+      							Смотреть все
+      							<img src="img/icons/arrow_link.png" alt="">
+      						</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры HTC</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры iPhone</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры Nokia</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры SAMSUNG</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры SONY</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры LENOVO</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры HUAWEI</span>
+      						<div class="circle">25</div>
+      					</a>
+   					 </div>
+  					</li>
+
+    				<li class="list-group-item dropdown dropright"><div class="d-flex justify-content-between" data-toggle="dropdown">Наушники и гарнитура
+  						<div class="arrow_change">
+  							<img src="img/icons/list.png" alt="" class="arrow">
+  							<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  						</div></div>
+  						<div class="dropdown-menu submenu">
+      					<a class="dropdown-item d-flex justify-content-between title_menu" href="#">
+      						<span >Проводные гарнитуры</span>
+      						<div class="arrow_link">
+      							Смотреть все
+      							<img src="img/icons/arrow_link.png" alt="">
+      						</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры HTC</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры iPhone</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры Nokia</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры SAMSUNG</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры SONY</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры LENOVO</span>
+      						<div class="circle">25</div>
+      					</a>
+      					<a class="dropdown-item d-flex justify-content-between" href="#">
+      						<span>Проводные гарнитуры HUAWEI</span>
+      						<div class="circle">25</div>
+      					</a>
+   					 </div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Кошельки и сумки для телефонов
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Защитные пленки для телефонов
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Чехлы для телефонов
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Автомобильные держатели
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Палки для селфи
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Внешние зарядные устройства
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Аккумуляторы для телефонов
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Соединительные кабели
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+  					<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Зарядные устройства и адаптеры
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+
+    				<li class="list-group-item dropdown dropright">
+    					<div class="d-flex justify-content-between" data-toggle="dropdown">Другие категории
+  							<div class="arrow_change">
+  								<img src="img/icons/list.png" alt="" class="arrow">
+  								<img src="img/icons/list_down.png" alt="" class="arrow_down">
+  							</div>
+  						</div>
+  					</li>
+				</ul>
+			</div>
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 pl-3"><div class="row d-flex justify-content-between m-0">
+				<div class="input-group p-0">
+  					<input type="text" class="form-control p-0">
+  					<div class="input-group-append">
+   						<button class="btn search p-0" type="submit">
+   							<span>Найти</span>
+   							<img src="img/icons/search.png" alt="">
+   						</button> 
+  					</div>
+				</div>
+				<div class="dropdown select_menu">
+  					<button type="button" class="btn  btn-link select pl-3" data-toggle="dropdown">
+    					<span>Во всех категориях</span>
+    					<img src="img/icons/select.png" alt="">
+ 					 </button>
+  					<div class="dropdown-menu dropdown-menu-right">
+    					<a href="" class="dropdown-item">Карты памяти </a>
+   						<a href="" class="dropdown-item">Смарт часы и браслеты</a>
+    					<a href="" class="dropdown-item">Наушники и гарнитура</a>
+    					<a href="" class="dropdown-item">Кошельки и сумки для телефонов</a>
+    					<a href="" class="dropdown-item">Защитные плёнки для экрана</a>
+    					<a href="" class="dropdown-item">Чехлы для телефонов</a>
+    					<a href="" class="dropdown-item">Автомобильные держатели</a>
+    					<a href="" class="dropdown-item">Палки для селфи</a>
+    					<a href="" class="dropdown-item">Внешние зарядные устройства</a>
+    					<a href="" class="dropdown-item">Аккумуляторы для телефонов</a>
+    					<a href="" class="dropdown-item">Соединительные кабели</a>
+    					<a href="" class="dropdown-item">Зарядные устройства и адаптеры</a>
+    					<a href="" class="dropdown-item border border-0">Другие категории</a>
+  					</div>
+				</div></div>
+
+					<div class="slider col-lg-12 col-md-12">
+						<div class="slider_item"><img src="img/slide_img.png" alt=""></div>
+						<div class="slider_item"><img src="img/slide_img.png" alt=""></div>
+						<div class="slider_item"><img src="img/slide_img.png" alt=""></div>
+						<div class="slider_item"><img src="img/slide_img.png" alt=""></div>
+						<div class="slider_item"><img src="img/slide_img.png" alt=""></div>
+					</div>
+
+					<div class="categories">
+						<div class="row m-0">
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+						</div>
+						<div class="row m-0">
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+							<div class="col-xl-2 col-lg-4 col-md-6 border text-uppercase">название категории</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="mb-4">
+		<h2>Популярные товары</h2>
+		<div class="slick">
+		<div class="gallary">
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div></div>
+			<div class="controls">
+				<div class="controls-arrows"><div class="controls-dots"></div></div></div>
+		</div>
+
+		<h2>Распродажа</h2>
+
+		<div class="slick">
+		<div class="gallary">
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div>
+
+			<div class="item">
+				<img src="img/item.png" alt="" class="mx-auto d-block">
+				<div class="about_product">Чехол силиконовый для телефона SAMSUNG Galaxy S9 чёрный (5шт)</div>
+				<div class="d-flex justify-content-between">
+					<div class="number border">000012345678</div>
+					<div class="status">
+						<img src="img/icons/check.png" alt="">
+						В наличии
+					</div>
+				</div>
+				<div class="block_price d-flex justify-content-between">
+					<div class="d-flex justify-content-between count">
+						<span class="minus text-center">-</span>
+    					<input type="text" class="text border text-center" value="1 шт" size="5"/>
+    					<span class="plus text-center">+</span>
+    				</div>
+    				<div class="price">35 $</div>
+				</div>
+				<button class="add_product d-flex justify-content-between">
+					<div>
+						<img src="img/icons/basket_pas.png" alt="" class="basket_pas mr-1">
+						<img src="img/icons/basket_act.png" alt="" class="basket_act mr-1">
+					</div>
+					Добавить в корзину
+				</button>
+			</div></div>
+			<div class="controls">
+				<div class="controls-arrows"><div class="controls-dots"></div></div></div>
+		</div>
+	</section>
+	
+	
+
+	<script>
+		$(document).on('ready', function () {
+			$('.slider').slick({
+				dots: true,
+            	infinite: true,
+            	speed: 500,
+       	 		slidesToShow: 1,
+        		slidesToScroll: 1,
+
+        		responsive: [
+                {
+               
+                    breakpoint: 500,
+                    settings: {
+                        dots: false
+                    }
+                }
+                			]
+
+			});
+    	});
+
+		$('.slick').each(function(){
+			var $this = $(this),
+				$blockArrows = $('.controls-arrows', $this),
+				$blockDots = $('.controls-dots', $this),
+				$slick = $('.gallary', $this);
+			$slick.slick({
+				dots: true,
+				arrows: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				appendArrows: $blockArrows,
+				appendDots: $blockDots,
+
+				responsive: [
+                {
+                	breakpoint: 1080,
+                    settings: {
+                        slidesToShow: 3,
+                }
+            },
+                {
+                    breakpoint: 820,
+                    settings: {
+                        slidesToShow: 2,
+                }
+            },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+                			]
+			});
+		});
+  
+    	$(".about_product").text(function(i, text) {
+
+  			if (text.length >= 60) {
+    		 text = text.substring(0, 60);
+    		 var lastIndex = text.lastIndexOf(" ");  
+    		 text = text.substring(0, lastIndex) + '...'; 
+ 		}
+  
+  		$(this).text(text);
+  
+		});
+
+		$(document).ready(function() {
+            $('.minus').click(function () {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.plus').click(function () {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
+        });
+
+	</script>
+
+</body>
+</html>
